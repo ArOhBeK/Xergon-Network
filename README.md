@@ -171,4 +171,111 @@ Local counters reset on restart, but global history never resets.
 **Xergon is a decentralized compute protocol that turns Ergo nodes into AI providers.  
 By combining node health, network verification, and local AI work into a verifiable score, Xergon enables a global marketplace for distributed AI inference powered by Proof-of-Node-Work.**
 
-Powered by Degens World (https://degens.world)
+Powered by Degens World https://degens.world
+
+Marketplace UI - 
+
+Statistics:
+
+<img width="732" height="661" alt="image" src="https://github.com/user-attachments/assets/da97aa9b-0a34-4f61-b641-c5907b385b06" />
+
+<img width="745" height="598" alt="image" src="https://github.com/user-attachments/assets/b7ebf92a-3226-4bda-aecf-2051c29166db" />
+
+AI Inference Console:
+
+<img width="1391" height="736" alt="image" src="https://github.com/user-attachments/assets/2828cab2-6c58-460d-9526-815640d251e9" />
+
+Agent API Example:
+
+{
+  "node": {
+    "node_healthy": true,
+    "node_synced": true,
+    "has_enough_peers": true,
+    "peer_count": 8,
+    "local_height": 1664931,
+    "best_height": 1664931,
+    "last_updated_ms": 1764199912054,
+    "ai_enabled": true,
+    "ai_model": "gemma3:1b",
+    "ai_total_tokens": 648,
+    "ai_points": 0,
+    "provider": {
+      "id": "Xergon_LT",
+      "name": "Xergon_LT",
+      "region": "us-east",
+      "public_node_id": null
+    }
+  },
+  "pown_status": {
+    "ai_enabled": true,
+    "ai_model": "gemma3:1b",
+    "ai_points": 0,
+    "ai_total_requests": 1,
+    "ai_total_tokens": 648,
+    "ai_weight": 1,
+    "ergo_address": "9fDrtPahmtQDAPbq9AccibtZVmyPD8xmNJkrNXBbFDkejkez1kM",
+    "last_agreement": 0,
+    "last_tick_ts": 1764199906,
+    "node_id": "7ab304becbd1ad3649e4020a848f979f3b4a418b441d5d8354fe4ecc2524f709",
+    "peers_checked": 0,
+    "total_xergon_confirmations": 0,
+    "unique_xergon_peers_seen": 0,
+    "work_points": 3521,
+    "xergon_peers": []
+  },
+  "pown_health": {
+    "best_height_local": 1664931,
+    "ergo_address": "9fDrtPahmtQDAPbq9AccibtZVmyPD8xmNJkrNXBbFDkejkez1kM",
+    "is_synced": true,
+    "last_header_id": null,
+    "node_height": 1664931,
+    "node_id": "7ab304becbd1ad3649e4020a848f979f3b4a418b441d5d8354fe4ecc2524f709",
+    "peer_count": 8,
+    "timestamp": 1764199915
+  },
+  "epoch": null,
+  "provider": {
+    "id": "Xergon_LT",
+    "name": "Xergon_LT",
+    "region": "us-east",
+    "public_node_id": null
+  },
+  "provider_models": [
+    {
+      "name": "gemma3:1b",
+      "price_per_1k_tokens_erg": 1,
+      "max_context": 1000
+    }
+  ],
+  "ollama_models": [
+    "gemma3:1b"
+  ],
+  "wallet_token": {
+    "confirmed": true,
+    "node_id": "15af1d8651a83e50ebfc9c80450ff65a959e4e9ef81d0f4f2a792c648ab2e20c",
+    "ergo_nano": 0,
+    "matched_tokens": [],
+    "token_metadata": {
+      "boxId": "71b37ed925e618d70b0b829e0d68c86712cd8c25f274e96d3aeb4a2f22cb4024",
+      "decimals": 0,
+      "description": "Xergon node identity NFT",
+      "emissionAmount": 1,
+      "id": "15af1d8651a83e50ebfc9c80450ff65a959e4e9ef81d0f4f2a792c648ab2e20c",
+      "name": "Xergon Node - Xergon_LT",
+      "type": "EIP-004"
+    },
+    "raw": {
+      "assets": {
+        "15af1d8651a83e50ebfc9c80450ff65a959e4e9ef81d0f4f2a792c648ab2e20c": 1
+      },
+      "balance": 1216771643,
+      "height": 1664931
+    },
+    "error": null
+  }
+}
+
+
+
+
